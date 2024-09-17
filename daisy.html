@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="coffee">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="navbar bg-base-100 fixed top-0">
+      <div class="flex-1">
+        <!-- Profile Button -->
+        <div tabindex="0" role="button" class="btn bg-primary btn-circle">
+          <div class="w-10 rounded-full">
+            <a href=""><img alt="Foto Diri" src="img/encup.png" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hamburger Button for smaller screens -->
+      <div class="flex-none lg:hidden">
+        <label tabindex="0" class="btn btn-square btn-ghost" for="my-drawer">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </label>
+      </div>
+
+      <!-- Full menu for larger screens -->
+      <div class="flex-none hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#hobby">Hobby</a></li>
+          <li><a href="#movies">Top Movies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Drawer for mobile menu -->
+      <input type="checkbox" id="my-drawer" class="drawer-toggle hidden" />
+      <div class="drawer-side lg:hidden">
+        <label for="my-drawer" class="drawer-overlay"></label>
+        <ul class="menu p-4 w-80 bg-base-100 h-screen">
+          <!-- Mobile menu items -->
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#hobby">Hobby</a></li>
+          <li><a href="#movies">Top Movies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="md:container md:mx-auto mt-12">
+      <div
+        class="container mx-auto p-6 flex flex-col md:flex-row items-center space-y-0 md:space-y-0 md:space-x-6"
+        id="aboutme"
+      >
+        <div class="flex-1 mt-12">
+          <h1
+            class="text-4xl md:text-7xl font-bold mb-4 text-secondary-content text-center"
+          >
+            Medericus Mundi Miseridityo
+          </h1>
+        </div>
+        <div class="flex-shrink-0">
+          <img
+            class="h-max object-cover rounded-3xl shadow-xl"
+            src="img/foto_pas.png"
+            alt="Placeholder Image"
+          />
+        </div>
+        <div class="flex-1">
+          <p
+            class="mt-12 shadow-lg text-primary-content bg-primary rounded-lg p-6 text-center"
+          >
+            Nama saya Medericus Mundi Miseridityo dan saya biasa dipanggil
+            <b>Erik</b>. Saya lahir di Manado pada tanggal 29 Agustus 2005,
+            tetapi sebagian besar saya tinggal di Klaten, Jawa Tengah. Saya
+            adalah seorang mahasiswa tahun kedua di Institut Teknologi Sepuluh
+            Nopember dan mengambil jurusan Teknik Informatika. Saya memiliki
+            ketertarikan di bidang Kecerdasan Artifisial dan juga robotika. Saya
+            bergabung dengan salah satu tim riset robotik yaitu Barunastra ITS.
+            yang berfokus pada bidang pengembangan Autonomous Surface Vessel
+            yang berupa robot kapal. Saya suka untuk mencoba dan belajar tentang
+            hal-hal baru terutama yang menyangkut bidang teknologi dan juga seni
+            khususnya musik.
+          </p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div
+        class="container mx-auto p-6 flex flex-col md:flex-col items-center"
+        id="education"
+      >
+        <h1
+          class="text-4xl md:text-7xl font-bold text-secondary-content text-center"
+        >
+          Education
+        </h1>
+        <div
+          class="mt-6 container mx-auto flex flex-col md:flex-row items-center"
+        >
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Sekolah Dasar
+            </h2>
+            <img
+              src="img/sd.jpg"
+              alt="SD PL Sugiyopranoto Klaten"
+              width="750"
+              class="rounded-lg shadow-lg mt-2"
+            />
+            <ul class="mt-3 text-center text-primary-content">
+              <p><b>Nama Sekolah: </b> SD PL Sugiyopranoto Klaten</p>
+              <p><b>Kota: </b>Klaten</p>
+              <p><b>Tahun Masuk: </b>2011</p>
+              <p><b>Tahun Keluar: </b>2017</p>
+            </ul>
+          </div>
+          <div class="md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Sekolah Menengah Pertama
+            </h2>
+            <img
+              src="img/smp.jpg"
+              alt="SMP Pangudi Luhur 1 Klaten"
+              width="600"
+              class="rounded-lg shadow-lg mt-2"
+            />
+            <ul class="mt-3 text-center text-primary-content">
+              <p><b>Nama Sekolah: </b> SMP Pangudi Luhur 1 Klaten</p>
+              <p><b>Kota: </b>Klaten</p>
+              <p><b>Tahun Masuk: </b>2017</p>
+              <p><b>Tahun Keluar: </b>2020</p>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="mt-6 container mx-auto flex flex-col md:flex-row items-center"
+        >
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Sekolah Menengah Atas
+            </h2>
+            <img
+              src="img/sma.jpg"
+              alt="SMA Kolese De Britto Yogyakarta"
+              width="750"
+              class="rounded-lg shadow-lg mt-2"
+            />
+            <ul class="mt-3 text-center text-primary-content">
+              <p><b>Nama Sekolah: </b> SMA Kolese De Britto Yogyakarta</p>
+              <p><b>Kota: </b>Sleman</p>
+              <p><b>Tahun Masuk: </b>2020</p>
+              <p><b>Tahun Keluar: </b>2023</p>
+              <p><b>Jurusan:</b> Matematika dan IPA</p>
+            </ul>
+          </div>
+          <div class="md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Sarjana (S1)
+            </h2>
+            <img
+              src="img/s1.webp"
+              alt="Institut Teknologi Sepuluh Nopember"
+              width="750"
+              class="rounded-lg shadow-lg mt-2"
+            />
+            <ul class="mt-3 text-center text-primary-content">
+              <p><b>Nama Sekolah: </b> Institut Teknologi Sepuluh Nopember</p>
+              <p><b>Kota: </b>Surabaya</p>
+              <p><b>Tahun Masuk: </b>2023</p>
+              <p><b>Tahun Keluar: </b> -</p>
+              <p><b>Jurusan:</b> Teknik Informatika</p>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div
+        class="container mx-auto p-6 flex flex-col md:flex-col items-center"
+        id="achievements"
+      >
+        <h1
+          class="text-4xl md:text-7xl font-bold text-secondary-content text-center"
+        >
+          Achievements
+        </h1>
+        <div
+          class="p-6 shadow-lg rounded-lg bg-primary mt-6 container mx-auto flex flex-col md:flex-row items-center"
+        >
+          <ul>
+            <li class="text-primary-content mb-4">
+              <b
+                >Juara 1 Lomba Video Edukasi "Pencegahan Resistensi Antibiotik"
+                2024</b
+              >
+              | FKK ITS | Mei 2024
+            </li>
+            <li class="text-primary-content mb-4">
+              <b>Juara 1 Amikom Video Competition kategori Film Terfavorit</b> |
+              Universitas Amikom Yogyakarta | Juni 2022
+            </li>
+            <li class="text-primary-content">
+              <b
+                >Juara 2 Lomba Video Kreatif "Ekspresi Parahyangan" kategori
+                Pelajar</b
+              >
+              | Universitas Parahyangan Bandung | November 2021
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div
+        class="container mx-auto p-6 flex flex-col md:flex-col items-center"
+        id="hobby"
+      >
+        <h1
+          class="text-4xl md:text-7xl font-bold text-secondary-content text-center"
+        >
+          Hobby
+        </h1>
+        <div
+          class="mt-6 container mx-auto flex flex-col md:flex-row items-center"
+        >
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <img
+              src="img/band.jpg"
+              alt="Foto band musik yang saya ikuti"
+              width="750"
+              class="rounded-lg shadow-lg mt-2"
+            />
+            <h2 class="text-primary-content mt-3 text-lg font-bold text-center">
+              Bermain Alat Musik (Piano, Gitar, dan Bass)
+            </h2>
+          </div>
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <img
+              src="img/basket.jpg"
+              alt="Foto bermain basket"
+              width="750"
+              class="rounded-lg shadow-lg mt-2"
+            />
+            <h2 class="text-primary-content mt-3 text-lg font-bold text-center">
+              Olahraga (Basket, Futsal, Badminton)
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div
+        class="container mx-auto p-6 flex flex-col md:flex-col items-center"
+        id="movies"
+      >
+        <h1
+          class="text-4xl md:text-7xl font-bold text-secondary-content text-center"
+        >
+          Top 3 Movies
+        </h1>
+        <div
+          class="mt-6 container mx-auto flex flex-col md:flex-row items-center"
+        >
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Fight Club
+            </h2>
+            <img
+              src="img/fight_club.jpg"
+              alt="Poster Fight Club"
+              width="200"
+              class="rounded-lg shadow-lg mt-2 mx-auto"
+            />
+            <p class="text-center text-primary-content mt-2">
+              Menawarkan cerita yang berbeda dari biasanya dan sangat seru untuk
+              diikuti. Sinematografi dan pengkarakteran yang bagus mendukung
+              jalannya cerita dari awal hingga akhir. Dan juga dengan ending
+              yang tidak tertebak membuat film ini menjadi favorit saya.
+            </p>
+          </div>
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Interstellar
+            </h2>
+            <img
+              src="img/interstellar.webp"
+              alt="Poster interstellar"
+              width="200"
+              class="rounded-lg shadow-lg mt-2 mx-auto"
+            />
+            <p class="text-center text-primary-content mt-2">
+              Ceritanya sangat menarik karena membahas tentang science fiction
+              yaitu tentang perjalanan luar angkasa yang juga berhubungan dengan
+              konsep relativitas. Dan dengan ketersambungan scene awal dengan
+              scene akhir yang menurut saya sangat jenius dan menjadikan film
+              ini sebagai favorit saya.
+            </p>
+          </div>
+          <div class="mb-6 md:mr-6 flex-1 p-4 rounded-lg shadow-lg bg-primary">
+            <h2 class="text-primary-content text-lg font-bold text-center">
+              Forrest Gump
+            </h2>
+            <img
+              src="img/forrest_gump.jpg"
+              alt="Poster Forrest Gump"
+              width="200"
+              class="rounded-lg shadow-lg mt-2 mx-auto"
+            />
+            <p class="text-center text-primary-content mt-2">
+              Menurut saya film ini sangat sederhana tetapi memiliki makna yang
+              sangat mendalam. Pengkarakteran tokoh utama yang diceritakan
+              sangat unik membuat dinamikanya di dalam film menjadi sangat
+              menarik. Dan kesan saya menonton film ini memberi pemaknaan
+              tentang kehidupan dan membuka pandangan saya.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div
+        class="container mx-auto p-6 flex flex-col md:flex-col items-center"
+        id="contact"
+      >
+        <h1
+          class="text-4xl md:text-7xl font-bold text-secondary-content text-center"
+        >
+          Contact
+        </h1>
+        <section
+          class="w-full px-6 sm:px-10 lg:px-20 mx-auto mt-10 p-6 bg-primary rounded-lg shadow-md"
+        >
+          <h2 class="text-2xl font-bold text-center mb-4 text-primary-content">
+            Kirim Pesan
+          </h2>
+
+          <form id="contactForm" class="space-y-6">
+            <!-- Nama Field -->
+            <div class="form-control">
+              <label class="label" for="name">
+                <span class="label-text">Nama</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Masukkan nama Anda"
+                class="input input-bordered w-full"
+                required
+              />
+              <p class="text-error mt-1 hidden" id="nameError">
+                Nama harus diisi
+              </p>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-control">
+              <label class="label" for="email">
+                <span class="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Masukkan email Anda"
+                class="input input-bordered w-full"
+                required
+              />
+              <p class="text-error mt-1 hidden" id="emailError">
+                Email harus diisi
+              </p>
+            </div>
+
+            <!-- Pesan Field -->
+            <div class="form-control">
+              <label class="label" for="message">
+                <span class="label-text">Pesan</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="textarea textarea-bordered w-full"
+                placeholder="Tulis pesan Anda di sini"
+                rows="4"
+                required
+              ></textarea>
+              <p class="text-error mt-1 hidden" id="messageError">
+                Pesan harus diisi
+              </p>
+            </div>
+
+            <!-- Kirim Button -->
+            <div>
+              <button
+                type="submit"
+                id="submitButton"
+                class="btn btn-primary w-full bg-secondary text-secondary-content"
+              >
+                Kirim
+              </button>
+
+              <p class="text-success mt-2 hidden" id="successMessage">
+                Terkirim
+              </p>
+
+              <div
+                class="rounded-lg shadow-lg mt-4 mx-auto bg-primary p-4 flex items-center justify-around"
+              >
+                <a href="https://www.instagram.com/medericuserik/">
+                  <img src="img/ig.png" alt="instagram" width="50" />
+                </a>
+                <a href="https://www.linkedin.com/in/medericuserik/">
+                  <img src="img/linkedin.png" alt="linked in" width="50" />
+                </a>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <script>
+          document
+            .getElementById("contactForm")
+            .addEventListener("submit", async function (event) {
+              event.preventDefault(); // Mencegah refresh halaman
+
+              // Mengambil nilai dari fields
+              const name = document.getElementById("name").value.trim();
+              const email = document.getElementById("email").value.trim();
+              const message = document.getElementById("message").value.trim();
+
+              // Menghilangkan pesan error sebelumnya
+              document.getElementById("nameError").classList.add("hidden");
+              document.getElementById("emailError").classList.add("hidden");
+              document.getElementById("messageError").classList.add("hidden");
+              document.getElementById("successMessage").classList.add("hidden");
+
+              let valid = true;
+
+              // Validasi input kosong
+              if (!name) {
+                document.getElementById("nameError").classList.remove("hidden");
+                valid = false;
+              }
+              if (!email) {
+                document
+                  .getElementById("emailError")
+                  .classList.remove("hidden");
+                valid = false;
+              }
+              if (!message) {
+                document
+                  .getElementById("messageError")
+                  .classList.remove("hidden");
+                valid = false;
+              }
+
+              if (!valid) {
+                return; // Jika ada input yang kosong, hentikan proses
+              }
+
+              // Ganti teks tombol dengan icon loading
+              const submitButton = document.getElementById("submitButton");
+              submitButton.innerHTML = '<div class="loading-spinner"></div>';
+              submitButton.disabled = true;
+
+              // Data yang akan dikirim
+              const data = {
+                name: name,
+                email: email,
+                message: message,
+              };
+
+              try {
+                // Mengirim data menggunakan fetch API
+                const response = await fetch(
+                  "https://debug.nafkhanzam.com/web-programming-e03",
+                  {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                  }
+                );
+
+                if (response.ok) {
+                  // Tampilkan pesan sukses
+                  document
+                    .getElementById("successMessage")
+                    .classList.remove("hidden");
+                } else {
+                  // Tampilkan status kesalahan dari server
+                  const errorMessage = await response.text(); // Menampilkan pesan kesalahan dari server
+                  alert(
+                    `Gagal mengirim pesan. Status: ${response.status}, Pesan: ${errorMessage}`
+                  );
+                }
+              } catch (error) {
+                // Menampilkan kesalahan di konsol untuk debugging
+                console.error("Error:", error);
+                alert("Terjadi kesalahan saat mengirim data: " + error.message);
+              } finally {
+                // Kembalikan tombol "Kirim" ke kondisi semula
+                submitButton.innerHTML = "Kirim";
+                submitButton.disabled = false;
+              }
+            });
+        </script>
+
+        <section
+          class="w-full px-6 sm:px-10 lg:px-20 mx-auto mt-10 p-6 bg-primary rounded-lg shadow-md"
+        >
+          <h2 class="text-2xl font-bold text-center mb-4 text-primary-content">
+            Text Field
+          </h2>
+
+          <!-- Text Field -->
+          <div class="form-control mb-4">
+            <label class="label" for="autoUpdateInput">
+              <span class="label-text text-neutral">Ketik di sini:</span>
+            </label>
+            <input
+              type="text"
+              id="autoUpdateInput"
+              name="autoUpdateInput"
+              placeholder="Ketik sesuatu..."
+              class="input input-bordered w-full"
+            />
+          </div>
+
+          <!-- Text yang akan di-update -->
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text text-neutral">Teks:</span>
+            </label>
+            <p
+              id="autoUpdateText"
+              class="text-primary-content bg-white p-2 rounded"
+            >
+              Teks akan muncul di sini...
+            </p>
+          </div>
+        </section>
+
+        <script>
+          // Ambil elemen input dan teks yang di-update
+          const inputField = document.getElementById("autoUpdateInput");
+          const autoUpdateText = document.getElementById("autoUpdateText");
+
+          // Fungsi untuk menyimpan nilai input ke localStorage dan update teks
+          function updateTextAndSave() {
+            const inputValue = inputField.value;
+            localStorage.setItem("savedText", inputValue); // Simpan di localStorage
+            autoUpdateText.textContent = inputValue; // Update teks secara langsung
+          }
+
+          // Cek apakah ada data di localStorage ketika halaman di-refresh atau dibuka kembali
+          window.onload = function () {
+            const savedText = localStorage.getItem("savedText"); // Ambil data dari localStorage
+            if (savedText) {
+              inputField.value = savedText; // Isi field dengan nilai yang tersimpan
+              autoUpdateText.textContent = savedText; // Tampilkan teks yang tersimpan
+            }
+          };
+
+          // Tambahkan event listener untuk update teks ketika pengguna mengetik
+          inputField.addEventListener("input", updateTextAndSave);
+        </script>
+
+        <style>
+          .hidden {
+            display: none;
+          }
+          .text-error {
+            color: red;
+          }
+          .text-success {
+            color: green;
+          }
+          .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+          }
+          @keyframes spin {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+      </div>
+    </div>
+  </body>
+</html>
